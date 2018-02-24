@@ -62,7 +62,6 @@ var Hangman = {
 
     //used when the user clicks to start a brand new game
     newGame: function() {
-
         Hangman.init();
         Hangman.wins = 0;
         document.querySelector("#wins").innerHTML = "0"
@@ -323,7 +322,9 @@ var Hangman = {
 Hangman.init();
 
 //Start a new game on New Game click
-document.querySelector("#new").addEventListener("click", Hangman.newGame());
+document.querySelector("#new-game").addEventListener("click", function() {
+    Hangman.newGame()
+});
 
 //When the guesses a letter
 Hangman.UserGuessesLetter()
