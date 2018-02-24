@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="assets/app.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        #word {
+            font-size: 2rem;
+        }
+        
+        body {
+            background-image: url("assets/movies-background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        
+        .jumbotron,
+        .modal {
+            opacity: 0.97;
+            color: black;
+        }
+        
+        main {
+            padding-top: 2rem;
+        }
+        
+        .primary-text {
+            color: white;
+        }
+        
+        .title-bar {
+            padding: 1rem;
+            background-color: #13549a;
+            width: 100%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1 class="text-center  title-bar">Guess the Movie Title</h1>
+
+    <main class="container">
+
+
+        <section class="row text-center">
+
+            <div class="col-md-12">
+                <div class="row jumbotron lead">
+                    <div class="col-md-5">
+                        <p class="text-left">Press any key on your keyboard to start guessing the movie.</p>
+                        <h5 id="hint">Movie Hint</h5>
+                        <img id="image" class="img-fluid" src="" />
+
+                    </div>
+                    <div class="col-md-7">
+                        <p id="word">Hello, world!</p>
+
+                        <p>Guesses Left: <span id="guesses">8</span></p>
+                        <p>Score: <span id="wins"></span></p>
+                        <button id="new" class="btn btn-primary">New Game</button>
+                        <h3 class="alert alert-sucess" id="playthrough-message"></h3>
+
+                        <p>Guessed letters: <span id="guessed-letters"></span></p>
+                        <p>Guessed words: <span id="guessed-words"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
